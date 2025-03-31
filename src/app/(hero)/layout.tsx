@@ -1,7 +1,8 @@
 // import type { Metadata } from 'next'
 // import { Geist, Geist_Mono } from 'next/font/google'
 // import './globals.css'
-import Header from '@/components/header'
+
+import { AntdRegistry } from '@ant-design/nextjs-registry'
 
 // const geistSans = Geist({
 //   variable: '--font-geist-sans',
@@ -26,8 +27,7 @@ export default function RootLayout({
   return (
     <>
       {/* Hello 大家好，这里是根Layout */}
-      <Header />
-      {children}
+      <AntdRegistry>{children}</AntdRegistry>
     </>
   )
 }
